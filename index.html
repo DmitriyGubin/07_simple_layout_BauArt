@@ -1,0 +1,1710 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Бауарт</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=e5df13fe-7b6a-4037-9699-cddff13aa624&amp;lang=ru_RU" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<div class="head-box">
+			<div class="first-line">
+				<a href="#">
+					<img class="logo" src="img/logo.png">
+				</a>
+
+				<div class="burger" style="display: none;">
+					<span></span>
+				</div>
+
+				<div class="social-plus-phone">
+					<div class="social-media">
+						<a href="https://vk.com/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener"><svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#4a4a4a"></path></svg></a>
+
+						<a href="https://ok.ru/group/61479945306205?roistat_visit=226285" target="_blank" rel="nofollow noopener"><svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm13.463-63.08c0 7.688-6.233 13.92-13.92 13.92-7.688 0-13.92-6.232-13.92-13.92S41.855 23 49.543 23s13.92 6.232 13.92 13.92Zm-7.072 0a6.848 6.848 0 1 0-13.696 0 6.848 6.848 0 0 0 13.696 0Zm3.341 15.006c2.894-2.28 5.07-.967 5.856.612 1.37 2.753-.178 4.084-3.671 6.326-2.96 1.9-7.016 2.619-9.665 2.892l2.217 2.216 8.203 8.203a3.192 3.192 0 0 1 0 4.514l-.376.376a3.192 3.192 0 0 1-4.514 0l-8.203-8.203-8.203 8.203a3.192 3.192 0 0 1-4.514 0l-.376-.376a3.192 3.192 0 0 1 0-4.514l8.203-8.203 2.21-2.21c-2.648-.268-6.748-.983-9.732-2.898-3.494-2.243-5.041-3.573-3.671-6.326.786-1.579 2.963-2.892 5.855-.612 3.91 3.08 10.19 3.08 10.19 3.08s6.282 0 10.191-3.08Z" fill="#4a4a4a"></path></svg></a>
+
+						<a href="https://www.youtube.com/channel/UCXwg_ZmN4kmoa2jlFxHP_aw?roistat_visit=226285" target="_blank" rel="nofollow noopener"><svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm17.9-67.374c3.838.346 6 2.695 6.474 6.438.332 2.612.626 6.352.626 10.375 0 7.064-.626 11.148-.626 11.148-.588 3.728-2.39 5.752-6.18 6.18-4.235.48-13.76.7-17.992.7-4.38 0-13.237-.184-17.66-.552-3.8-.317-6.394-2.44-6.916-6.218-.38-2.752-.626-6.022-.626-11.222 0-5.788.209-8.238.7-10.853.699-3.732 2.48-5.54 6.548-5.96C36.516 32.221 40.55 32 49.577 32c4.413 0 13.927.228 18.322.626Zm-23.216 9.761v14.374L58.37 49.5l-13.686-7.114Z" fill="#4a4a4a"></path></svg></a>
+
+						<a href="https://t.me/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener"><svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#4a4a4a"></path></svg></a>
+					</div>
+
+					<a class="header-phone" href="tel:+73832449519">8 (383) 244-95-19</a>
+				</div>
+			</div>
+
+			<div class="menu">
+				<ul>
+					<li class="sub-menu-point">
+						<a href="#">О нас</a>
+						<div style="display: none;" class="sub-menu modify-sub-menu-one">
+							<div class="menu-triangle">
+								<div class="triangle"></div>
+								<ul>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">География строительства</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Блог/Новости</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="#">Проекты домов</a>
+					</li>
+
+					<li>
+						<a href="#">Дома в продаже</a>
+					</li>
+
+					<li>
+						<a href="#">Построенные проекты</a>
+					</li>
+
+					<li class="sub-menu-point">
+						<a href="#">Видео</a>
+						<div style="display: none;" class="sub-menu modify-sub-menu-two">
+							<div class="menu-triangle">
+								<div class="triangle"></div>
+								<ul>
+									<li><a href="#">Вручение ключей и отзывы</a></li>
+									<li><a href="#">Первый кирпич</a></li>
+									<li><a href="#">Видеообзор домов</a></li>
+									<li><a href="#">Экскурсии по посёлкам</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="#">Строительство коттеджей</a>
+					</li>
+
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+
+					<li>
+						<a href="#">Партнёрам</a>
+					</li>	
+				</ul>
+
+				<div class="for-mobile-head" style="display: none;">
+					<a class="header-phone" href="tel:+73832449519">8 (383) 244-95-19</a>
+
+					<div class="social-media">
+						<a href="https://vk.com/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener"><svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#4a4a4a"></path></svg></a>
+
+						<a href="https://ok.ru/group/61479945306205?roistat_visit=226285" target="_blank" rel="nofollow noopener"><svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm13.463-63.08c0 7.688-6.233 13.92-13.92 13.92-7.688 0-13.92-6.232-13.92-13.92S41.855 23 49.543 23s13.92 6.232 13.92 13.92Zm-7.072 0a6.848 6.848 0 1 0-13.696 0 6.848 6.848 0 0 0 13.696 0Zm3.341 15.006c2.894-2.28 5.07-.967 5.856.612 1.37 2.753-.178 4.084-3.671 6.326-2.96 1.9-7.016 2.619-9.665 2.892l2.217 2.216 8.203 8.203a3.192 3.192 0 0 1 0 4.514l-.376.376a3.192 3.192 0 0 1-4.514 0l-8.203-8.203-8.203 8.203a3.192 3.192 0 0 1-4.514 0l-.376-.376a3.192 3.192 0 0 1 0-4.514l8.203-8.203 2.21-2.21c-2.648-.268-6.748-.983-9.732-2.898-3.494-2.243-5.041-3.573-3.671-6.326.786-1.579 2.963-2.892 5.855-.612 3.91 3.08 10.19 3.08 10.19 3.08s6.282 0 10.191-3.08Z" fill="#4a4a4a"></path></svg></a>
+
+						<a href="https://www.youtube.com/channel/UCXwg_ZmN4kmoa2jlFxHP_aw?roistat_visit=226285" target="_blank" rel="nofollow noopener"><svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm17.9-67.374c3.838.346 6 2.695 6.474 6.438.332 2.612.626 6.352.626 10.375 0 7.064-.626 11.148-.626 11.148-.588 3.728-2.39 5.752-6.18 6.18-4.235.48-13.76.7-17.992.7-4.38 0-13.237-.184-17.66-.552-3.8-.317-6.394-2.44-6.916-6.218-.38-2.752-.626-6.022-.626-11.222 0-5.788.209-8.238.7-10.853.699-3.732 2.48-5.54 6.548-5.96C36.516 32.221 40.55 32 49.577 32c4.413 0 13.927.228 18.322.626Zm-23.216 9.761v14.374L58.37 49.5l-13.686-7.114Z" fill="#4a4a4a"></path></svg></a>
+
+						<a href="https://t.me/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener"><svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#4a4a4a"></path></svg></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="shade-box"></div>
+		</div>
+	</header>
+
+	<section class="find-house">
+		<div class="upper-box wrap">
+			<div class="text">
+				<h2>
+					Посмотрите все готовые 
+					дома в коттеджном 
+					поселке 
+				</h2>
+				<h3>
+					«Сибирские просторы»
+				</h3>
+
+				<div class="button-line">
+					<button id="excursion">Хочу на экскурсию</button>
+					<a id="view-houses">Посмотреть дома на сайте</a>
+				</div>
+			</div>
+
+			<div class="find-house-slider img-box">
+				<img src="img/house_1.jpg">
+				<img src="img/house_2.jpg">
+			</div>
+		</div>
+
+		<div class="lower-box wrap">
+			<p>Ответьте на несколько вопросов и найдите идеальный дом под свои критерии.</p>
+			<button id="find-house">НАЙТИ ДОМ</button>
+		</div>
+	</section>
+
+	<section class="about-company wrap">
+		<h2 class="sub-title">О компании</h2>
+
+		<div class="about-text">
+			<strong>БауАртЭстетика</strong> — это синергия трех направлений: проектирование, строительство и собственное агентство недвижимости.
+			<br>
+			<br>
+			Компания имеет многолетний опыт на строительном рынке. Проектирование и строительство коттеджей — экспертное направление компании. Наши авторские проекты востребованы и подтверждены количеством проданных и сданных объектов. Их выбирают за неотъемлемый стиль, функциональность планировок, обилие дневного света и качество исполнения.
+			<br>
+			<br>
+			Целые поселки счастливых семей являются результатом нашего профессионализма. Мы знаем, как важно пространство, в котором Вы проводите время со своими близкими, поэтому заботимся о том, чтобы Ваш дом был идеальным во всех отношениях.
+			<br>
+			<br>
+			<strong>Мы строим дома, в которых хочется жить!</strong>
+		</div>
+
+		<div class="numbers">
+			<div class="num-item">
+				<h2>4+</h2>
+				<div></div>
+				<span>Строим для Вас</span>
+			</div>
+
+			<div class="num-item">
+				<h2>20+</h2>
+				<div></div>
+				<span>Архитектурных проектов домов</span>
+			</div>
+
+			<div class="num-item">
+				<h2>>186</h2>
+				<div></div>
+				<span>Построено домов</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="examples wrap">
+		<div class="example-item">
+			<h2 class="main-title">Коттедж "Тростен" 184 м²</h2>
+			<h2 class="descr">построен более 75 раз</h2>
+			<h2 class="price">от 6 999 000 ₽</h2>
+			<div class="item-box">
+				<div class="examples-slider img-box">
+					<img src="img/house_2.jpg">
+					<img src="img/house_1.jpg">
+				</div>
+
+				<div class="text-box">
+					<div class="main-text">
+						<p>ФЛАГМАН КОМПАНИИ узнаваем и знаменит. Гармонично вписывается в любой коттеджный посёлок.</p>
+						<ul>
+							<li> Общая площадь 184 м² </li>
+							<li> Жилая площадь: 96 м² </li>
+							<li> Жилых комнат: 4 </li>
+							<li> Крыша: скатная мансардная </li>
+							<li> Тип фундаментов: ленточный </li>
+							<li> Тип перекрытий: ж/б плита </li>
+							<li> Покрытие кровли: металлочерепица </li>
+							<li> Вода заведена в дом </li>
+							<li> Канализация: автономный септик </li>
+							<li> Выход на задний двор: есть </li>
+							<li> Санузел: 3 </li>
+							<li> Встроенная лестница на второй этаж </li>
+						</ul>
+					</div>
+
+					<div class="button-line">
+						<button class="more-info">Узнать подробнее</button>
+						<button class="show-this">Записаться на показ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="helpfulness wrap">
+		<h2 class="title">Мы можем быть полезны</h2>
+		<div class="help-box">
+			<div class="help-item">
+				<img src="img/help_1.png">
+				<h3>Готовые и строящиеся дома в продаже</h3>
+				<p>
+					Предлагаем дома на разных стадиях строительства в коттеджных посёлках Новосибирска и НСО.
+				</p>
+			</div>
+
+			<div class="help-item">
+				<img src="img/help_2.png">
+				<h3>Строительство коттеджей по нашим проектам</h3>
+				<p>
+					Возведение фундамента, кладка стен, кровельные работы, облицовка и отделка фасадов. Сдаём в срок.
+				</p>
+			</div>
+
+			<div class="help-item">
+				<img src="img/help_3.png">
+				<h3>Помощь в получении ипотеки</h3>
+				<p>
+					Ипотечные брокеры в штате помогут получить выгодное ипотечное решение для Вас от ведущих банков России.
+				</p>
+			</div>
+
+			<div class="help-item">
+				<img src="img/help_4.png">
+				<h3>Юридическое сопровождение</h3>
+				<p>
+					Помогаем оформить полный пакет документов для начала строительства и регистрации права собственности.
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="questions wrap">
+		<h2 class="title">Остались вопросы?</h2>
+		<div class="quest-box">
+			<img src="img/book.png">
+			<div class="text-box">
+				<p>
+					Хотите узнать больше о проектировании и наших домах?! О деталях и фишках наших проектов? Почитать о преимуществах, материалах и узнать все подробности?
+				</p>
+
+				<h3>
+					Получите презентацию в пару кликов, оставив заявку на сайте!
+				</h3>
+				<button id="get-presentation">Получить презентацию</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="hits wrap">
+		<h2 class="title">Хиты продаж</h2>
+		<div class="hits-box">
+			<div class="hits-item">
+				<a href="#" class="img-box">
+					<img class="one-img" src="img/house_2.jpg">
+					<img class="two-img hide" src="img/house_3.jpeg">
+					<div class="red-ban-new">NEW</div>
+				</a>
+
+				<div class="text-box">
+					<h2 class="house-name">Коттедж "Вилла Прагматико"</h2>
+					<h2 class="house-price">4 600 000 ₽</h2>
+					<div class="area-rooms">
+						<p>Площадь коттеджа: 80 м²</p>
+						<p>Жилых комнат: 3</p>
+					</div>
+					<a class="more-info-hits">УЗНАТЬ ПОДРОБНЕЕ</a>
+				</div>
+			</div>
+
+			<div class="hits-item">
+				<a href="#" class="img-box">
+					<img class="one-img" src="img/house_2.jpg">
+					<img class="two-img hide" src="img/house_3.jpeg">
+					<div class="red-ban-new">NEW</div>
+				</a>
+
+				<div class="text-box">
+					<h2 class="house-name">Коттедж "Вилла Прагматико"</h2>
+					<h2 class="house-price">4 600 000 ₽</h2>
+					<div class="area-rooms">
+						<p>Площадь коттеджа: 80 м²</p>
+						<p>Жилых комнат: 3</p>
+					</div>
+					<a class="more-info-hits">УЗНАТЬ ПОДРОБНЕЕ</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="go-to-catalog">
+		<div class="wrap">
+			<h2>
+				ХОТИТЕ УВИДЕТЬ ВСЕ СТРОЯЩИЕСЯ И ГОТОВЫЕ ДОМА?
+			</h2>
+			<a id="go-catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
+		</div>
+	</section>
+
+
+	<section class="ipoteka wrap">
+		<h2 class="sub-title">Ипотека на строительство и приобретение готовых домов</h2>
+		<h2 class="akkreditiv">Аккредитованы в ведущих банках РФ: СБЕРБАНК и ДОМ.РФ</h2>
+		<div class="ipoteka-box">
+			<div class="ipoteka-item">
+				<div>
+					<h2 class="bank-name">Россельхозбанк от 3%</h2>
+
+					<ul>
+						<li>Первоначальный взнос от 10%</li>
+						<li> Сумма кредита: до 3 млн ₽ на каждого из супругов</li>
+						<li>На покупку жилого дома с земельным участком</li>
+						<li> Срок кредита: до 25 лет </li>
+					</ul>
+				</div>
+				<button class="more-info-ipoteka">УЗНАТЬ ПОДРОБНЕЕ</button>
+			</div>
+
+			<div class="ipoteka-item">
+				<div>
+					<h2 class="bank-name">Банк ДОМ.РФ от 5,1%</h2>
+					<ul>
+						<li>Первоначальный взнос от 15%</li>
+						<li> Сумма кредита: до 15 млн ₽ </li>
+						<li>На строительство дома с приобретением земельного участка (на имеющемся участке)</li>
+						<li>Срок кредита: до 30 лет</li>
+					</ul>
+				</div>
+				<button class="more-info-ipoteka">УЗНАТЬ ПОДРОБНЕЕ</button>
+			</div>
+
+			<div class="ipoteka-item">
+				<div>
+					<h2 class="bank-name">СБЕРБАНК от 5,3%</h2>
+
+					<ul> 
+						<li>Первоначальный взнос от 15% </li> 
+						<li> Сумма кредита: до 6 млн ₽ </li> 
+						<li> На строительство дома на земельном участке (с приобретением земельного участка)/На покупку готового дома</li> 
+						<li> Срок кредита: до 30 лет </li>
+					</ul>
+				</div>
+				<button class="more-info-ipoteka">УЗНАТЬ ПОДРОБНЕЕ</button>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="villages">
+		<div class="wrap">
+			<h2 class="sub-title">Поселки, которые мы рекомендуем</h2>
+			<div class="villa-box">
+				<div class="villa-item">
+					<div>
+						<img class="villa-logo" src="img/villa-logo.jpg">
+						<div class="villa-name">
+							<p>Экопосёлок-парк</p>
+							<p>Сибирские просторы</p>
+						</div>
+						<ul>
+							<li>30 мин от метро площадь Маркса</li>
+							<li>Экоферма и пасека</li>
+							<li>Собственный парк отдыха</li>
+							<li>Питомник растений</li>
+							<li>Лыжная трасса</li>
+							<li>Асфальтированные дороги</li>
+						</ul>
+
+						<div style="display: none" class="about-villa">
+							Эко-поселок Новосибирска со своей идеей и историей.На территории школа и детский сад. Экологически чистое место вдали от производственных предприятий.Концепция здорового образа жизни.
+						</div>
+					</div>
+					<a href="#" class="more-info-villa">ПОДРОБНЕЕ</a>
+				</div>
+
+				<div class="villa-item">
+					<div>
+						<img class="villa-logo" src="img/villa-logo.jpg">
+						<div class="villa-name">
+							<p>Экопосёлок-парк</p>
+							<p>Сибирские просторы</p>
+						</div>
+						<ul style="display: none">
+							<li>30 мин от метро площадь Маркса</li>
+							<li>Экоферма и пасека</li>
+							<li>Собственный парк отдыха</li>
+							<li>Питомник растений</li>
+							<li>Лыжная трасса</li>
+							<li>Асфальтированные дороги</li>
+						</ul>
+
+						<div class="about-villa">
+							Эко-поселок Новосибирска со своей идеей и историей.На территории школа и детский сад. Экологически чистое место вдали от производственных предприятий.Концепция здорового образа жизни.
+						</div>
+					</div>
+					<a href="#" class="more-info-villa">ПОДРОБНЕЕ</a>
+				</div>
+
+				<div class="villa-item">
+					<div>
+						<img class="villa-logo" src="img/villa-logo.jpg">
+						<div class="villa-name">
+							<p>Экопосёлок-парк</p>
+							<p>Сибирские просторы</p>
+						</div>
+						<ul style="display: none">
+							<li>30 мин от метро площадь Маркса</li>
+							<li>Экоферма и пасека</li>
+							<li>Собственный парк отдыха</li>
+							<li>Питомник растений</li>
+							<li>Лыжная трасса</li>
+							<li>Асфальтированные дороги</li>
+						</ul>
+
+						<div class="about-villa">
+							Эко-поселок Новосибирска со своей идеей и историей.На территории школа и детский сад. Экологически чистое место вдали от производственных предприятий.Концепция здорового образа жизни.
+						</div>
+					</div>
+					<a href="#" class="more-info-villa">ПОДРОБНЕЕ</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="telega wrap">
+		<h2 class="title">
+			Рекомендуем посетить и подписаться на наш телеграм-канал
+		</h2>
+		<div class="arrow-button">
+			<svg role="presentation" class="arrow-desctop" style="fill:#c9c9c9; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 180">
+				<path d="M54.1 109c-.8 0-1.6-.4-2-1.1-.8-1.1-.5-2.7.6-3.5 1.3-.9 6.8-4 11.6-6.6-15.9-1.3-29.2-8.3-38.5-20.2C8.9 56 8.5 24.1 13.2 3.4c.3-1.3 1.7-2.2 3-1.9 1.3.3 2.2 1.7 1.9 3-4.5 19.6-4.2 49.8 11.6 70 9 11.5 21.5 17.7 37.2 18.4l-1.8-2.3c-1.4-1.7-2.7-3.4-4.1-5.1-.7-.9-1.5-1.9-2.3-2.9-.9-1.1-.7-2.6.4-3.5 1.1-.9 2.6-.7 3.5.4 0 0 0 .1.1.1l6.4 7.9c.5.5.9 1.1 1.4 1.7 1.5 1.8 3.1 3.6 4.4 5.6 0 .1.1.1.1.2.1.3.2.5.3.8v.6c0 .2-.1.4-.2.6-.1.1-.1.3-.2.4-.1.2-.3.4-.5.6-.1.1-.3.2-.5.3-.1 0-.1.1-.2.1-1.2.6-16 8.6-18.1 10-.5.5-1 .6-1.5.6z">
+				</path>
+			</svg>
+
+			<svg role="presentation" class="arrow-mobile" style="fill:#c9c9c9; display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 70"><path d="M31.5 47c-1.1-.9-2.7-.7-3.5.4L20.2 57V5.8c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5V57l-7.8-9.7c-.8-1-2.4-1.2-3.5-.3-1.1.9-1.2 2.4-.4 3.5l12.2 15.2c.5.6 1.2.9 1.9.9s1.5-.3 1.9-.9l12.2-15.2c1-1.1.9-2.6-.2-3.5z"></path></svg>
+
+			<a href="https://t.me/bauartesthetics?roistat_visit=226285">Перейти</a>
+		</div>
+		<div class="delimeter"></div>
+	</section>
+
+
+	<section class="blog wrap">
+		<h2 class="title">Блог компании</h2>
+		<div class="blog-box">
+			<a class="blog-item" href="#">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="date">14 Jun, 2022</p>
+					<h2 class="item-title">
+						Праздник "День детства" в экопосёлке-парке "Сибирские просторы"
+					</h2>
+					<div class="descr">
+						Совместно с нашим партнёром Экопосёлком-парком "Сибирские Просторы" мы организовали настоящий праздник для всей семьи в День детства.
+					</div>
+				</div>
+			</a>
+
+			<a class="blog-item" href="#">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="date">14 Jun, 2022</p>
+					<h2 class="item-title">
+						Праздник "День детства" в экопосёлке-парке "Сибирские просторы"
+					</h2>
+					<div class="descr">
+						Совместно с нашим партнёром Экопосёлком-парком "Сибирские Просторы" мы организовали настоящий праздник для всей семьи в День детства.
+					</div>
+				</div>
+			</a>
+
+			<a class="blog-item" href="#">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="date">14 Jun, 2022</p>
+					<h2 class="item-title">
+						Праздник "День детства" в экопосёлке-парке "Сибирские просторы"
+					</h2>
+					<div class="descr">
+						Совместно с нашим партнёром Экопосёлком-парком "Сибирские Просторы" мы организовали настоящий праздник для всей семьи в День детства.
+					</div>
+				</div>
+			</a>
+
+			<a class="blog-item" href="#">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="date">14 Jun, 2022</p>
+					<h2 class="item-title">
+						Праздник "День детства" в экопосёлке-парке "Сибирские просторы"
+					</h2>
+					<div class="descr">
+						Совместно с нашим партнёром Экопосёлком-парком "Сибирские Просторы" мы организовали настоящий праздник для всей семьи в День детства.
+					</div>
+				</div>
+			</a>	
+		</div>
+		<a href="#" class="all-news">ПЕРЕЙТИ КО ВСЕМ НОВОСТЯМ</a>
+		<div class="delimeter"></div>
+	</section>
+
+	<section class="find-house-quest">
+		<div class="wrap">
+			<h2>
+				Ответьте на несколько вопросов и найдите идеальный дом под свои критерии.
+			</h2>
+			<a id="find-house-quest" href="#">НАЙТИ ДОМ</a>
+		</div>
+	</section>
+
+	<section class="social_media wrap">
+		<h2 class="sub-title">
+			Приглашаем присоединиться к нам в социальных сетях
+		</h2>
+		<div class="social-line">
+			<a href="https://vk.com/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+				<svg class="t-sociallinks__svg" width="64px" height="64px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#01142f">
+					</path>
+				</svg>
+			</a>
+
+			<a href="https://ok.ru/group/61479945306205?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+				<svg class="t-sociallinks__svg" width="64px" height="64px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm13.463-63.08c0 7.688-6.233 13.92-13.92 13.92-7.688 0-13.92-6.232-13.92-13.92S41.855 23 49.543 23s13.92 6.232 13.92 13.92Zm-7.072 0a6.848 6.848 0 1 0-13.696 0 6.848 6.848 0 0 0 13.696 0Zm3.341 15.006c2.894-2.28 5.07-.967 5.856.612 1.37 2.753-.178 4.084-3.671 6.326-2.96 1.9-7.016 2.619-9.665 2.892l2.217 2.216 8.203 8.203a3.192 3.192 0 0 1 0 4.514l-.376.376a3.192 3.192 0 0 1-4.514 0l-8.203-8.203-8.203 8.203a3.192 3.192 0 0 1-4.514 0l-.376-.376a3.192 3.192 0 0 1 0-4.514l8.203-8.203 2.21-2.21c-2.648-.268-6.748-.983-9.732-2.898-3.494-2.243-5.041-3.573-3.671-6.326.786-1.579 2.963-2.892 5.855-.612 3.91 3.08 10.19 3.08 10.19 3.08s6.282 0 10.191-3.08Z" fill="#01142f">
+					</path>
+				</svg>
+			</a>
+
+			<a href="https://www.youtube.com/channel/UCXwg_ZmN4kmoa2jlFxHP_aw?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+				<svg class="t-sociallinks__svg" width="64px" height="64px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm17.9-67.374c3.838.346 6 2.695 6.474 6.438.332 2.612.626 6.352.626 10.375 0 7.064-.626 11.148-.626 11.148-.588 3.728-2.39 5.752-6.18 6.18-4.235.48-13.76.7-17.992.7-4.38 0-13.237-.184-17.66-.552-3.8-.317-6.394-2.44-6.916-6.218-.38-2.752-.626-6.022-.626-11.222 0-5.788.209-8.238.7-10.853.699-3.732 2.48-5.54 6.548-5.96C36.516 32.221 40.55 32 49.577 32c4.413 0 13.927.228 18.322.626Zm-23.216 9.761v14.374L58.37 49.5l-13.686-7.114Z" fill="#01142f">
+					</path>
+				</svg>
+			</a>
+
+			<a href="https://t.me/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+				<svg class="t-sociallinks__svg" width="64px" height="64px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#01142f">
+					</path>
+				</svg>
+			</a>
+		</div>
+	</section>
+
+
+	<section class="map">
+		<h2 class="sub-title wrap">Коттеджные поселки в которых мы строим</h2>
+		<div id="map">
+		</div>
+	</section>
+
+	<section class="nav-chain wrap">
+		<ul>
+			<li>
+				<a href="#">Главная</a>
+				<span class="arrow">→</span>
+			</li>
+			<li><a href="#">Коттеджные посёлки</a></li>
+		</ul>
+	</section>
+
+	<section class="head-ban">
+		<img class="fon" src="img/head-fon.png">
+		<div class="filter"></div>
+		<div class="text-layer">
+			<div class="wrap">
+				<h2>
+					География строительства в Новосибирске и Новосибирской области
+				</h2>
+				<p>
+					Коттеджные поселки в которых мы строим дома
+				</p>
+			</div>
+		</div>
+		<div class="two-imgs">
+			<img class="map-point" src="img/map-point-head.png">
+			<img class="house" src="img/head-house.png">
+		</div>
+	</section>
+
+	<section class="villagess wrap">
+		<div class="villa-box">
+			<div class="villa-item">
+				<div>
+					<div class="img-box">
+						<img src="img/villa.png">
+					</div>
+					<div class="text-box">
+						<div class="villa-name">
+							<h2>Загородный посёлок</h2>
+							<h2>«Деревня Мира»</h2>
+						</div>
+						<ul>
+							<li> 18 минут до станции метро "Березовая роща"</li>
+							<li> детский садик и школа </li>
+							<li> супермаркет </li>
+							<li> спортивные площадки </li>
+							<li> собственный сквер на территории</li>
+						</ul>
+						<div class="about-villa" style="display: none;">
+							Эко-поселок Новосибирска со своей идеей и историей. На территории школа и детский сад. Экологически чистое место вдали от производственных предприятий.
+							Концепция здорового образа жизни.
+						</div>
+						<a class="more-info" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="villa-item">
+				<img style="width: 150px;" class="logo" src="img/logo_1.png">
+				<div>
+					<div class="img-box">
+						<img src="img/villa.png">
+					</div>
+					<div class="text-box">
+						<div class="villa-name">
+							<h2>Загородный посёлок</h2>
+							<h2>«Деревня Мира»</h2>
+						</div>
+						<ul style="display: none;">
+							<li> 18 минут до станции метро "Березовая роща"</li>
+							<li> детский садик и школа </li>
+							<li> супермаркет </li>
+							<li> спортивные площадки </li>
+							<li> собственный сквер на территории</li>
+						</ul>
+						<div class="about-villa">
+							Эко-поселок Новосибирска со своей идеей и историей. На территории школа и детский сад. Экологически чистое место вдали от производственных предприятий.
+							Концепция здорового образа жизни.
+						</div>
+						<a class="more-info" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="horizontal">
+				<div class="text-box">
+					<img class="logo-desctop" style="width: 150px;" src="img/logo_1.png">
+					<ul>
+						<li> 18 минут до станции метро "Березовая роща"</li>
+						<li> детский садик и школа </li>
+						<li> супермаркет </li>
+						<li> спортивные площадки </li>
+						<li> собственный сквер на территории</li>
+					</ul>
+					<div style="display: none;" class="about-villa">
+						Коттеджный поселок бизнес-класса, рассчитанный на людей, предпочитающих комфортно жить вдали от шума и суеты, но с развитой инфраструктурой, в окружении привычных городских удобств.
+					</div>
+					<a class="more-info" href="#">Подробнее</a>
+				</div>
+
+				<div class="img-box">
+					<img src="img/horizonltal.jpg">
+				</div>
+
+				<img class="logo-mobile hide" style="width: 150px;" src="img/logo_1.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="advantages wrap">
+		<h2 class="title">Почему стоит выбрать коттеджный посёлок</h2>
+		<div class="adv-box">
+			<div class="adv-item">
+				<div class="img-box">
+					<img src="img/forest.jpg">
+				</div>
+				<div class="text-box">
+					<h2 class="adv-title">Экологически чистые локации 1</h2>
+					<div class="adv-about">
+						Чистейший воздух, наполненный ароматами трав. Наслаждайтесь прогулками круглый год.
+					</div>
+				</div>
+			</div>
+
+			<div class="adv-item modify shift">
+				<div class="img-box">
+					<img src="img/forest.jpg">
+				</div>
+				<div class="text-box">
+					<h2 class="adv-title">Экологически чистые локации 2</h2>
+					<div class="adv-about">
+						Чистейший воздух, наполненный ароматами трав. Наслаждайтесь прогулками круглый год.
+					</div>
+				</div>
+			</div>
+
+			<div class="adv-item modify">
+				<div class="img-box">
+					<img src="img/forest.jpg">
+				</div>
+				<div class="text-box">
+					<h2 class="adv-title">Экологически чистые локации 3</h2>
+					<div class="adv-about">
+						Чистейший воздух, наполненный ароматами трав. Наслаждайтесь прогулками круглый год.
+					</div>
+				</div>
+			</div>
+
+			<div class="adv-item shift">
+				<div class="img-box">
+					<img src="img/forest.jpg">
+				</div>
+				<div class="text-box">
+					<h2 class="adv-title">Экологически чистые локации 4</h2>
+					<div class="adv-about">
+						Чистейший воздух, наполненный ароматами трав. Наслаждайтесь прогулками круглый год.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="up-map">
+		<h2 class="title">Посмотрите коттеджные <br> посёлки на карте</h2>
+		<div id="up-map"></div>
+	</section>
+
+	<section class="excursion">
+		<div class="filter"></div>
+		<div class="img-box">
+			<img class="fon" src="img/family-fon.png">
+		</div>
+		<div class="text-layer">
+			<div class="text-box wrap">
+				<h2>
+					Хотите увидеть коттеджные посёлки своими глазами?
+				</h2>
+				<a id="excursion_order" href="#">Записаться на экскурсию</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="find-house-quest">
+		<div class="wrap">
+			<h2>
+				Ответьте на несколько вопросов и найдите идеальный дом под свои критерии.
+			</h2>
+			<a id="find-house-quest" href="#">НАЙТИ ДОМ</a>
+		</div>
+	</section>
+
+	<section class="social_media wrap">
+		<h2 class="sub-title">
+			Приглашаем присоединиться к нам в социальных сетях
+		</h2>
+		<div class="social-line">
+			<a href="https://vk.com/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+				<svg class="t-sociallinks__svg" width="64px" height="64px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#01142f">
+					</path>
+				</svg>
+			</a>
+
+			<a href="https://ok.ru/group/61479945306205?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+				<svg class="t-sociallinks__svg" width="64px" height="64px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm13.463-63.08c0 7.688-6.233 13.92-13.92 13.92-7.688 0-13.92-6.232-13.92-13.92S41.855 23 49.543 23s13.92 6.232 13.92 13.92Zm-7.072 0a6.848 6.848 0 1 0-13.696 0 6.848 6.848 0 0 0 13.696 0Zm3.341 15.006c2.894-2.28 5.07-.967 5.856.612 1.37 2.753-.178 4.084-3.671 6.326-2.96 1.9-7.016 2.619-9.665 2.892l2.217 2.216 8.203 8.203a3.192 3.192 0 0 1 0 4.514l-.376.376a3.192 3.192 0 0 1-4.514 0l-8.203-8.203-8.203 8.203a3.192 3.192 0 0 1-4.514 0l-.376-.376a3.192 3.192 0 0 1 0-4.514l8.203-8.203 2.21-2.21c-2.648-.268-6.748-.983-9.732-2.898-3.494-2.243-5.041-3.573-3.671-6.326.786-1.579 2.963-2.892 5.855-.612 3.91 3.08 10.19 3.08 10.19 3.08s6.282 0 10.191-3.08Z" fill="#01142f">
+					</path>
+				</svg>
+			</a>
+
+			<a href="https://www.youtube.com/channel/UCXwg_ZmN4kmoa2jlFxHP_aw?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+				<svg class="t-sociallinks__svg" width="64px" height="64px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm17.9-67.374c3.838.346 6 2.695 6.474 6.438.332 2.612.626 6.352.626 10.375 0 7.064-.626 11.148-.626 11.148-.588 3.728-2.39 5.752-6.18 6.18-4.235.48-13.76.7-17.992.7-4.38 0-13.237-.184-17.66-.552-3.8-.317-6.394-2.44-6.916-6.218-.38-2.752-.626-6.022-.626-11.222 0-5.788.209-8.238.7-10.853.699-3.732 2.48-5.54 6.548-5.96C36.516 32.221 40.55 32 49.577 32c4.413 0 13.927.228 18.322.626Zm-23.216 9.761v14.374L58.37 49.5l-13.686-7.114Z" fill="#01142f">
+					</path>
+				</svg>
+			</a>
+
+			<a href="https://t.me/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+				<svg class="t-sociallinks__svg" width="64px" height="64px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#01142f">
+					</path>
+				</svg>
+			</a>
+		</div>
+	</section>
+
+	<section class="map">
+		<h2 class="sub-title wrap">Коттеджные поселки в которых мы строим</h2>
+		<div id="map">
+		</div>
+	</section>
+
+	<section class="headd-ban">
+		<img src="img/head-fonn.png">
+		<div class="filter"></div>
+		<div class="text-layer">
+			<div class="wrap">
+				<div class="white-box">
+					<h2 class="white-box-title">
+						Строительство домов под ключ <br>
+						в Новосибирске и в Новосибирской области
+					</h2>
+					<p class="white-box-text">
+						Строим надежные дома по индивидуальному <br>
+						или готовому проекту. 
+					</p>
+					<button id="excursion-order">Записаться на экскурсию</button>
+				</div>
+
+				<div class="advantagess">
+					<div class="adv-item">
+						<img src="img/adv_1.png">
+						<div>
+							<h2 class="adv-title">СТРОИМ</h2>
+							<p class="adv-text">
+								Строим дома по индивидуальным проектам
+							</p>
+						</div>
+					</div>
+
+					<div class="adv-item">
+						<img src="img/adv_2.png">
+						<div>
+							<h2 class="adv-title">ОПЫТ</h2>
+							<p class="adv-text">
+								Наша компания уже 5 лет в строительной индустрии.
+							</p>
+						</div>
+					</div>
+
+					<div class="adv-item">
+						<img src="img/adv_3.png">
+						<div>
+							<h2 class="adv-title">ИПОТЕКА</h2>
+							<p class="adv-text">
+								Работаем с банками партнерами.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div style="background-color: rgb(239, 239, 239);">
+	<section class="presentation wrap">
+		<h2 class="sub-title">Получить полный список всех доступных участков и презентацию поселков</h2>
+		<p class="pdf">
+			Получите PDF документ со всеми актуальными <br>
+			предложениями
+		</p>
+
+		<div class="book-form">
+			<img class="book" src="img/book.png">
+			<form class="form">
+				<h2 class="form-title">
+					Получите презентацию в пару кликов, оставив заявку на сайте!
+				</h2>
+
+				<div class="form_block">
+		            <label for="name_client">Ваше имя</label>
+		            <br>
+		            <input id="name_client" type="text">
+		        </div>
+
+		        <div class="form_block">
+		            <label for="phone_client">Ваш телефон</label>
+		            <br>
+		            <input id="phone_client" type="text">
+		        </div>
+
+		        <button id="get-presentation">Получить презентацию</button>
+
+		        <p class="polite">
+		        	Отправляя данную форму 
+		        	<strong>
+		        		вы соглашаетесь с политикой конфиденциальности.
+		        	</strong>
+		        </p>
+			</form>
+		</div>
+	</section>
+
+	<section class="why-we wrap">
+		<h2 class="sub-title">За что клиенты выбирают нас?</h2>
+		<div class="why-we-box">
+			<div class="why-we-item">
+				<div class="vertical-line"></div>
+				<div class="horizontal-line"></div>
+				<img src="img/adv_1.png">
+				<h2 class="why-we-title">Строим по <br> технологиям</h2>
+				<p class="why-we-text">
+					Адаптируем мировые технологии <br>
+					с учетом нашего климата и геологии
+				</p>
+			</div>
+
+			<div class="why-we-item">
+				<img src="img/why-we-2.png">
+				<h2 class="why-we-title">Делаем всю <br> работу</h2>
+				<p class="why-we-text">
+					Завозим материалы, строим, следим за качеством исполнения
+				</p>
+			</div>
+
+			<div class="why-we-item">
+				<img src="img/why-we-3.png">
+				<div class="in-line">
+					<h2 class="why-we-title">Исключаем <br> брак материалов</h2>
+					<p class="why-we-text">
+						На производстве весь строительный материал проходит тщательную проверку
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="new-year wrap">
+		<div class="new-year-box">
+			<div class="img-box">
+				<img class="fon" src="img/new-year.jpg">
+				<img class="tree" src="img/new-year-tree.png">
+			</div>
+			<div class="text-box">
+				<div class="only-text">
+					<h2 class="new-year-title">
+						Хотите встретить Новый год в собственном доме?
+					</h2>
+					<p class="new-year-text">
+						У нас есть для вас готовые, тёплые и красивые дома. Зайзжайте и живите!
+					</p>
+				</div>
+				<button id="more-info-new-year">Узнать подробнее</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="stages wrap">
+		<h2 class="sub-title">Этапы разработки индивидуального проекта</h2>
+		<div class="stages-box">
+			<div class="stages-box-item">
+				<div class="round">1</div>
+				<p class="stage-text">
+					Оставляете заявку на создание индивидуального проекта
+				</p>
+			</div>
+
+			<div class="stages-box-item">
+				<div class="round">2</div>
+				<p class="stage-text">
+					Наш менеджер связывается с вами для уточнения деталей и сроков
+				</p>
+			</div>
+
+			<div class="stages-box-item">
+				<div class="round">3</div>
+				<p class="stage-text">
+					Встреча с архитектором, заполнение брифа на проектирование
+				</p>
+			</div>
+
+			<div class="stages-box-item">
+				<div class="round">4</div>
+				<p class="stage-text">
+					Заключение договора на проектирование и оплата
+				</p>
+			</div>
+
+			<div class="stages-box-item">
+				<div class="round">5</div>
+				<p class="stage-text">
+					Выезд с архитектором на участок, чтобы проанализировать его и учесть все нюансы в проекте
+				</p>
+			</div>
+
+			<div class="stages-box-item">
+				<div class="round">6</div>
+				<p class="stage-text">
+					Обсуждение с архитектором вариантов планировок и фасадов, выбор оптимального решения
+				</p>
+			</div>
+
+			<div class="stages-box-item">
+				<div class="round">7</div>
+				<p class="stage-text">
+					Получаете готовый проект и рассчитанную смету на дом!
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="calc wrap">
+		<form>
+			<h2 class="form-title">
+				Рассчитайте стоимость <br>
+				вашего проекта
+			</h2>
+			<div class="form-box">
+				<div class="form_block">
+					<label for="house-area">Желаемая площадь дома м²</label>
+					<input id="house-area" type="number">
+				</div>
+
+				<div class="form_block">
+					<label for="your-name">Ваше имя</label>
+					<input id="your-name" type="text">
+				</div>
+
+				<div class="form_block">
+					<label for="your-phone">Напишите ваш телефон</label>
+					<input id="your-phone" type="text">
+				</div>
+				<button id="calc-this">Оставить заявку на рассчёт</button>
+			</div>
+		</form>
+
+		
+		<div class="imgs-box">
+			<div class="calc-house">
+				<img class="calculator" src="img/calculator.png">
+				<img class="little-house" src="img/little-house.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="ready-proj wrap">
+		<h2 class="sub-title">Готовые проекты</h2>
+		<div class="ready-proj-box">
+			<div class="ready-proj-item">
+				<div class="ready-proj-slider img-box">
+					<img src="img/house_1.jpg">
+					<img src="img/head-fon.png">
+				</div>
+				<div class="main-line">
+					<h3 class="proj-name">Коттедж Тростен</h3>
+					<p class="proj-area hide mobile">Площадь 184 м²</p>
+					<span class="proj-price">6 999 000 ₽</span>
+				</div>
+				<p class="proj-area desctop">Площадь 184 м²</p>
+			</div>
+
+			<div class="ready-proj-item">
+				<div class="ready-proj-slider img-box">
+					<img src="img/house_1.jpg">
+					<img src="img/head-fon.png">
+				</div>
+				<div class="main-line">
+					<h3 class="proj-name">Коттедж Тростен</h3>
+					<p class="proj-area hide mobile">Площадь 184 м²</p>
+					<span class="proj-price">6 999 000 ₽</span>
+				</div>
+				<p class="proj-area desctop">Площадь 184 м²</p>
+			</div>
+
+			<div class="ready-proj-item">
+				<div class="ready-proj-slider img-box">
+					<img src="img/house_1.jpg">
+					<img src="img/head-fon.png">
+				</div>
+				<div class="main-line">
+					<h3 class="proj-name">Коттедж Тростен</h3>
+					<p class="proj-area hide mobile">Площадь 184 м²</p>
+					<span class="proj-price">6 999 000 ₽</span>
+				</div>
+				<p class="proj-area desctop">Площадь 184 м²</p>
+			</div>
+
+			<div class="ready-proj-item">
+				<div class="ready-proj-slider img-box">
+					<img src="img/house_1.jpg">
+					<img src="img/head-fon.png">
+				</div>
+				<div class="main-line">
+					<h3 class="proj-name">Коттедж Тростен</h3>
+					<p class="proj-area hide mobile">Площадь 184 м²</p>
+					<span class="proj-price">6 999 000 ₽</span>
+				</div>
+				<p class="proj-area desctop">Площадь 184 м²</p>
+			</div>
+		</div>
+		<a id="more-info-ready-proj" href="#">Увидеть больше</a>
+	</section>
+
+	<section class="excersion wrap">
+		<form>
+			<h2 class="form-title">
+				Запишитесь на экскурсию <br>
+				по готовым проектам
+			</h2>
+			<p class="form-text">
+				Оставьте заявку прямо сейчас и наш специалист по строительству свяжется с вами в самое ближайшее время.
+			</p>
+
+			<div class="form_block">
+		        <label for="name_excursion">Ваше имя</label>
+		        <input id="name_excursion" type="text">
+		    </div>
+
+		    <div class="form_block">
+		        <label for="phone_excursion">Ваш номер телефона</label>
+		        <input id="phone_excursion" type="text">
+		    </div>
+			
+			<button id="excursion-ready-proj">Записаться на экскурсию</button>
+		</form>
+		<div class="images">
+			<div class="img-box left-img">
+				<img src="img/excursion_1.jpg">
+			</div>
+			<div class="img-box right-img">
+				<img src="img/excursion_2.jpg">
+			</div>
+		</div>
+	</section>
+
+	<section class="blogg wrap">
+		<h2 class="title">Блог компании</h2>
+		<div class="blog-box">
+			<a href="#" class="blog-item">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="blog-date">01 Dec, 2022</p>
+					<h2 class="blog-title">
+						Чем лучше утеплять стены в частном доме
+					</h2>
+					<div class="blog-text">
+						Утепление стен — это важнейший этап в строительстве дома, который предназначен для круглогодичного проживания.
+					</div>
+				</div>
+			</a>
+
+			<a href="#" class="blog-item">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="blog-date">01 Dec, 2022</p>
+					<h2 class="blog-title">
+						Как получить сельскую ипотеку в Новосибирской области
+					</h2>
+					<div class="blog-text">
+						В целях улучшения жилищных условий для сельских жителей и привлечения населения в село Правительство РФ запустило программу льготного ипотечного кредитования с максимальной ставкой 3%.
+					</div>
+				</div>
+			</a>
+
+			<a href="#" class="blog-item">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="blog-date">01 Dec, 2022</p>
+					<h2 class="blog-title">
+						Что выгоднее — купить готовый дом, построить самостоятельно или заказать проект?
+					</h2>
+					<div class="blog-text">
+						У каждого варианта есть свои преимущества, но также присутствуют некоторые риски и недостатки.
+					</div>
+				</div>
+			</a>
+
+			<a href="#" class="blog-item hide">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="blog-date">01 Dec, 2022</p>
+					<h2 class="blog-title">
+						Чем лучше утеплять стены в частном доме
+					</h2>
+					<div class="blog-text">
+						Утепление стен — это важнейший этап в строительстве дома, который предназначен для круглогодичного проживания.
+					</div>
+				</div>
+			</a>
+
+			<a href="#" class="blog-item hide">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="blog-date">01 Dec, 2022</p>
+					<h2 class="blog-title">
+						Как получить сельскую ипотеку в Новосибирской области
+					</h2>
+					<div class="blog-text">
+						В целях улучшения жилищных условий для сельских жителей и привлечения населения в село Правительство РФ запустило программу льготного ипотечного кредитования с максимальной ставкой 3%.
+					</div>
+				</div>
+			</a>
+
+			<a href="#" class="blog-item hide">
+				<div class="img-box">
+					<img src="img/blog.jpg">
+				</div>
+				<div class="text-box">
+					<p class="blog-date">01 Dec, 2022</p>
+					<h2 class="blog-title">
+						Что выгоднее — купить готовый дом, построить самостоятельно или заказать проект?
+					</h2>
+					<div class="blog-text">
+						У каждого варианта есть свои преимущества, но также присутствуют некоторые риски и недостатки.
+					</div>
+				</div>
+			</a>
+		</div>
+		<p id="show-more-blog">Показать еще</p>
+	</section>
+	</div>
+
+	<section class="head-bann">
+		<div class="text-layer">
+			<div class="wrap">
+				<div class="text-box">
+					<h2 class="sub-title">Проекты домов</h2>
+					<h2 class="title">Льготная ипотека</h2>
+					<div class="head-ban-text">
+						Мы разрабатываем наши проекты под различные потребности: от компактных домов по доступным ценам до просторных коттеджей для больших семей.
+						<br>
+						<br>
+						Мы вдохновляемся современными европейскими архитектурными идеями, уделяя особое внимание безопасности и комфорту будущих жителей дома.
+						<br>
+						<br>
+						Выгодные варианты покупки (строительства) в <span class="green-word">ипотеку</span>.
+					</div>
+				</div>
+				<img class="family-img" src="img/family.png">
+				<div class="filter"></div>
+			</div>
+		</div>
+		<img class="fon" src="img/head-banner.jpeg">
+	</section>
+
+	<section class="about-catalog">
+		<div class="wrap">
+			<h2>
+				Хотите получить электронный каталог коттеджей?
+			</h2>
+			<a id="about-catalog" href="#">ПОЛУЧИТЬ КАТАЛОГ</a>
+		</div>
+	</section>
+
+	<section class="filter-catalog">
+		<div class="filter">
+			<div class="desctop-filter">
+				<div class="price">
+					<p class="label">Цена, от и до ₽</p>
+					<div class="polzunok-container-5">
+						<input id="price-from" type="text" class="polzunok-input-5-left" />
+						<span class="delimeter">&nbsp;—&nbsp;</span>
+						<input id="price-to" type="text" class="polzunok-input-5-right "/>
+						<div class="polzunok-5"></div>
+					</div>
+				</div>
+
+				<div class="readiness">
+					<p class="label">Готовность</p>
+					<!-- <input id="readiness" type="checkbox"> -->
+					<div class="checkbox-text">
+						<div class="my-checkbox" id="readiness">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">Строится</span>
+					</div>
+				</div>
+
+				<div class="floors">
+					<p class="label">Этажность</p>
+					<div class="checkbox-text">
+						<div class="my-checkbox" id="one-floor">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">1-этажный</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox" id="two-floor">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">2-этажный</span>
+					</div>
+				</div>
+
+				<div class="house-project">
+					<p class="label">Проект дома</p>
+					<div class="checkbox-text">
+						<div class="my-checkbox" id="island-120">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">"ISLAND" 120 м²</span>
+					</div>
+				</div>
+
+				<div class="rooms">
+					<p class="label">Жилых комнат</p>
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">3</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">4</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">5</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">6</span>
+					</div>
+				</div>
+
+				<div class="area">
+					<p class="label">Общая площадь</p>
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">от 60 до 80 м²</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">от 90 до 100 м²</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">от 100 до 120 м²</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">от 100 до 160 м²</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">от 160 до 190 м²</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">от 170 до 190 м²</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">от 190 до 210 м²</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="mobile-filter hide">
+			</div>
+
+			<div class="variants-box hide">
+				<p class="how-much">Найдено: <span id="amount">10</span></p>
+				<div class="variants">
+					<div class="variants-item">
+						<span class="cross">✕</span>
+						<span class="variants-item-text">от 60 до 8</span>
+					</div>
+
+					<div class="variants-item">
+						<span class="cross">✕</span>
+						<span class="variants-item-text">3</span>
+					</div>
+				</div>
+				<p id="clear-filter">Очистить все</p>
+			</div>
+		</div>
+
+		<div class="catalog">
+			<div class="hits-box">
+				<div class="hits-item">
+					<a href="#" class="img-box">
+						<img class="one-img" src="img/house_2.jpg">
+						<img class="two-img hide" src="img/house_3.jpeg">
+						<div class="red-ban-hit">ХИТ <br> ПРОДАЖ</div>
+					</a>
+
+					<div class="text-box">
+						<h2 class="house-name">Коттедж "Вилла Прагматико"</h2>
+						<h2 class="house-price">4 600 000 ₽</h2>
+						<div class="area-rooms">
+							<p>Площадь коттеджа: 80 м²</p>
+							<p>Жилых комнат: 3</p>
+						</div>
+
+						<div class="button-line">
+							<a id="more-info" href="#">ПОДРОБНЕЕ</a>
+							<a id="order-this" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hits-item">
+					<a href="#" class="img-box">
+						<img class="one-img" src="img/house_2.jpg">
+						<img class="two-img hide" src="img/house_3.jpeg">
+						<div class="red-ban-new">NEW</div>
+					</a>
+
+					<div class="text-box">
+						<h2 class="house-name">Коттедж "Вилла Прагматико"</h2>
+						<h2 class="house-price">4 600 000 ₽</h2>
+						<div class="area-rooms">
+							<p>Площадь коттеджа: 80 м²</p>
+							<p>Жилых комнат: 3</p>
+						</div>
+
+						<div class="button-line">
+							<a id="more-info" href="#">ПОДРОБНЕЕ</a>
+							<a id="order-this" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hits-item">
+					<a href="#" class="img-box">
+						<img class="one-img" src="img/house_2.jpg">
+						<img class="two-img hide" src="img/house_3.jpeg">
+						<div class="red-ban-new">NEW</div>
+					</a>
+
+					<div class="text-box">
+						<h2 class="house-name">Коттедж "Вилла Прагматико"</h2>
+						<h2 class="house-price">4 600 000 ₽</h2>
+						<div class="area-rooms">
+							<p>Площадь коттеджа: 80 м²</p>
+							<p>Жилых комнат: 3</p>
+						</div>
+
+						<div class="button-line">
+							<a id="more-info" href="#">ПОДРОБНЕЕ</a>
+							<a id="order-this" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hits-item">
+					<a href="#" class="img-box">
+						<img class="one-img" src="img/house_2.jpg">
+						<img class="two-img hide" src="img/house_3.jpeg">
+						<div class="red-ban-new">NEW</div>
+					</a>
+
+					<div class="text-box">
+						<h2 class="house-name">Коттедж "Вилла Прагматико"</h2>
+						<h2 class="house-price">4 600 000 ₽</h2>
+						<div class="area-rooms">
+							<p>Площадь коттеджа: 80 м²</p>
+							<p>Жилых комнат: 3</p>
+						</div>
+
+						<div class="button-line">
+							<a id="more-info" href="#">ПОДРОБНЕЕ</a>
+							<a id="order-this" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hits-item">
+					<a href="#" class="img-box">
+						<img class="one-img" src="img/house_2.jpg">
+						<img class="two-img hide" src="img/house_3.jpeg">
+						<div class="red-ban-new">NEW</div>
+					</a>
+
+					<div class="text-box">
+						<h2 class="house-name">Коттедж "Вилла Прагматико"</h2>
+						<h2 class="house-price">4 600 000 ₽</h2>
+						<div class="area-rooms">
+							<p>Площадь коттеджа: 80 м²</p>
+							<p>Жилых комнат: 3</p>
+						</div>
+
+						<div class="button-line">
+							<a id="more-info" href="#">ПОДРОБНЕЕ</a>
+							<a id="order-this" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hits-item">
+					<a href="#" class="img-box">
+						<img class="one-img" src="img/house_2.jpg">
+						<img class="two-img hide" src="img/house_3.jpeg">
+						<div class="red-ban-new">NEW</div>
+					</a>
+
+					<div class="text-box">
+						<h2 class="house-name">Коттедж "Вилла Прагматико"</h2>
+						<h2 class="house-price">4 600 000 ₽</h2>
+						<div class="area-rooms">
+							<p>Площадь коттеджа: 80 м²</p>
+							<p>Жилых комнат: 3</p>
+						</div>
+
+						<div class="button-line">
+							<a id="more-info" href="#">ПОДРОБНЕЕ</a>
+							<a id="order-this" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="forma">
+		<img class="fon" src="img/page-fon.jpg">
+		<div class="filter"></div>
+		<div class="layer">
+			<h2 class="sub-title">
+				 Форма уведомления о клиенте <br>
+				 в БауАртЭстетика 
+			</h2>
+
+			<p class="required-fields">
+				Пожалуйста, заполните форму ниже. <br>
+				Поля отмеченные * (звёздочкой) - обязательны для заполнения.
+			</p>
+
+			<form>
+				<div class="form_block">
+					<label for="full-name">Укажите фамилию, имя, отчество клиента*</label>
+					<input placeholder="ФИО клиента" id="full-name" type="text">
+				</div>
+
+				<div class="form_block">
+					<label for="client-phone">Укажите телефон клиента*</label>
+					<input placeholder="" id="client-phone" type="text">
+				</div>
+
+				<div class="form_block">
+					<label for="realty-agency">Укажите название агентства недвижимости*</label>
+					<input placeholder="Название агентства недвижимости" id="realty-agency" type="text">
+				</div>
+
+				<div class="form_block">
+					<label for="agent-full-name">Укажите фамилию, имя, отчество агента*</label>
+					<input placeholder="ФИО агента" id="agent-full-name" type="text">
+				</div>
+
+				<div class="form_block">
+					<label for="agent-phone">Укажите телефон агента*</label>
+					<input placeholder="" id="agent-phone" type="text">
+				</div>
+
+				<div class="form_block">
+					<label for="agent-email">Укажите e-mail агента для получения подтверждения</label>
+					<input placeholder="E-mail" id="agent-email" type="text">
+				</div>
+
+				<div class="form_block">
+					<label for="object">Объект (Не обязательно для консультации. Обязательно для бронирования.)</label>
+					<input placeholder="Объект" id="object" type="text">
+				</div>
+
+				<div class="form_block">
+					<label for="comment">Комментарий</label>
+					<textarea placeholder="Бронь, консультация, номер паспорта и т.п." id="comment"></textarea>
+				</div>
+
+				<button id="send-form">Отправить уведомление</button>
+
+				<div class="under_form_text">
+					Отправляя эту форму, Вы уведомляете «БауАртЭстетика» о клиенте агента.<br>Оставленное Вами уведомление будет отправлено в отдел продаж.<br>Клиент закрепляется за агентом на срок до 60 дней при бронировании<br>и на 30 дней при консультации. Заполняя данное обращение,<br>Вы даете свое согласие на обработку персональных данных<br>в соответствии с ФЗ "О персональных данных". <br><br> «БауАртЭстетика» не передает персональные данные третьим лицам. <br>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="wrap footer-box">
+			<div class="contacts">
+				<a href="#"><img class="logo" src="img/logo.png"></a>
+				<div class="social-media">
+					<a href="https://vk.com/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+						<svg class="t-sociallinks__svg" width="25px" height="25px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#01142f">
+							</path>
+						</svg>
+					</a>
+
+					<a href="https://ok.ru/group/61479945306205?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+						<svg class="t-sociallinks__svg" width="25px" height="25px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm13.463-63.08c0 7.688-6.233 13.92-13.92 13.92-7.688 0-13.92-6.232-13.92-13.92S41.855 23 49.543 23s13.92 6.232 13.92 13.92Zm-7.072 0a6.848 6.848 0 1 0-13.696 0 6.848 6.848 0 0 0 13.696 0Zm3.341 15.006c2.894-2.28 5.07-.967 5.856.612 1.37 2.753-.178 4.084-3.671 6.326-2.96 1.9-7.016 2.619-9.665 2.892l2.217 2.216 8.203 8.203a3.192 3.192 0 0 1 0 4.514l-.376.376a3.192 3.192 0 0 1-4.514 0l-8.203-8.203-8.203 8.203a3.192 3.192 0 0 1-4.514 0l-.376-.376a3.192 3.192 0 0 1 0-4.514l8.203-8.203 2.21-2.21c-2.648-.268-6.748-.983-9.732-2.898-3.494-2.243-5.041-3.573-3.671-6.326.786-1.579 2.963-2.892 5.855-.612 3.91 3.08 10.19 3.08 10.19 3.08s6.282 0 10.191-3.08Z" fill="#01142f"></path>
+						</svg>
+					</a>
+
+					<a href="https://www.youtube.com/channel/UCXwg_ZmN4kmoa2jlFxHP_aw?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+						<svg class="t-sociallinks__svg" width="25px" height="25px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm17.9-67.374c3.838.346 6 2.695 6.474 6.438.332 2.612.626 6.352.626 10.375 0 7.064-.626 11.148-.626 11.148-.588 3.728-2.39 5.752-6.18 6.18-4.235.48-13.76.7-17.992.7-4.38 0-13.237-.184-17.66-.552-3.8-.317-6.394-2.44-6.916-6.218-.38-2.752-.626-6.022-.626-11.222 0-5.788.209-8.238.7-10.853.699-3.732 2.48-5.54 6.548-5.96C36.516 32.221 40.55 32 49.577 32c4.413 0 13.927.228 18.322.626Zm-23.216 9.761v14.374L58.37 49.5l-13.686-7.114Z" fill="#01142f">
+							</path>
+						</svg>
+					</a>
+
+					<a href="https://t.me/bauartesthetics?roistat_visit=226285" target="_blank" rel="nofollow noopener">
+						<svg class="t-sociallinks__svg" width="25px" height="25px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#01142f">
+							</path>
+						</svg>
+					</a>
+				</div>
+
+				<div class="last-line">
+					© 2021 BauArtEsthetics
+					<br>
+					г. Новосибирск
+					<br>
+					<a href="tel:+73832449519">
+						<strong>8 (383) 244-95-19</strong>
+					</a>
+				</div>
+			</div>
+
+			<ul>
+				<li><a href="#">Проекты домов</a></li>
+				<li><a href="#">Дома в продаже</a></li>
+				<li><a href="#">География строительства</a></li>
+				<li><a href="#">Строительство коттеджей</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#">Построенные дома</a></li>
+				<li><a href="#">Видео</a></li>
+				<li><a href="#">Новости</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Партнёрам</a></li>
+			</ul>
+		</div>
+
+		<div class="wrap polite">
+			Вся представленная информация носит информационный характер. Не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса РФ.
+			<br>
+			<a href="https://bauartesthetics.ru/privacy_policy">
+				Политика обработки персональных данных
+			</a>
+		</div>
+	</footer>
+
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html> 
